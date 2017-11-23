@@ -1,0 +1,15 @@
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.appbid">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+
+    <application android:allowBackup="true" android:label="@string/app_name"
+        android:supportsRtl="true">
+
+        <meta-data android:name="applovin.sdk.key"
+            android:value="wrrEUGLy-02pbUJBKTGWn1UeuMSTX99R_-gTF0PE0R2cxMoGw3og4GKycnP9wZbvXGMoGn1HD4u9QfPKiB_nSK"  />
+
+    </application>
+
+</manifest>
