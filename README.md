@@ -24,11 +24,89 @@ Add AppBid library to your project(File->New->Import module):
 ![New module dialog - Android Studio](https://appbid.com/img/android/import_module_dialog.png)
 
 
+## AndroidManifest.xml
+
+Permissions
+```
+<uses-permission android:name="android.permission.INTERNET"/>
+<uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
+```
+
+
+Add the following lines under application
+```
+<!-- Chartboost -->
+<activity android:name="com.chartboost.sdk.CBImpressionActivity"
+    android:excludeFromRecents="true"
+    android:hardwareAccelerated="true"
+    android:theme="@android:style/Theme.Translucent.NoTitleBar.Fullscreen"
+    android:configChanges="keyboardHidden|orientation|screenSize" />
+
+<!-- MoPub -->
+<activity android:name="com.mopub.mobileads.MoPubActivity" android:configChanges="keyboardHidden|orientation|screenSize"/>
+<activity android:name="com.mopub.mobileads.MraidActivity" android:configChanges="keyboardHidden|orientation|screenSize"/>
+<activity android:name="com.mopub.common.MoPubBrowser" android:configChanges="keyboardHidden|orientation|screenSize"/>
+<activity android:name="com.mopub.mobileads.MraidVideoPlayerActivity" android:configChanges="keyboardHidden|orientation|screenSize"/>
+<activity android:name="com.mopub.mobileads.RewardedMraidActivity" android:configChanges="keyboardHidden|orientation|screenSize"/>
+
+<!-- Flurry Advertising -->
+<activity
+    android:name="com.flurry.android.FlurryFullscreenTakeoverActivity"
+    android:configChanges="keyboard|keyboardHidden|orientation|screenLayout|uiMode|screenSize|smallestScreenSize" />
+
+<!-- Applovin -->
+<activity android:name="com.applovin.adview.AppLovinInterstitialActivity" android:configChanges="orientation|screenSize"/>
+<activity android:name="com.applovin.adview.AppLovinConfirmationActivity" android:configChanges="orientation|screenSize"/>
+
+<!-- Amazon ads -->
+<activity android:name="com.amazon.device.ads.AdActivity" android:configChanges="keyboardHidden|orientation|screenSize"/>
+
+
+<!-- Unity ADS -->
+<activity
+    android:name="com.unity3d.ads.adunit.AdUnitActivity"
+    android:configChanges="fontScale|keyboard|keyboardHidden|locale|mnc|mcc|navigation|orientation|screenLayout|screenSize|smallestScreenSize|uiMode|touchscreen"
+    android:hardwareAccelerated="true"
+    android:theme="@android:style/Theme.NoTitleBar.Fullscreen" />
+<activity
+    android:name="com.unity3d.ads.adunit.AdUnitSoftwareActivity"
+    android:configChanges="fontScale|keyboard|keyboardHidden|locale|mnc|mcc|navigation|orientation|screenLayout|screenSize|smallestScreenSize|uiMode|touchscreen"
+    android:hardwareAccelerated="false"
+    android:theme="@android:style/Theme.NoTitleBar.Fullscreen" />
+
+<!-- InMobi -->
+<activity
+    android:name="com.inmobi.rendering.InMobiAdActivity"
+    android:configChanges="keyboardHidden|orientation|keyboard|smallestScreenSize|screenSize|screenLayout"
+    android:hardwareAccelerated="true"
+    android:resizeableActivity="false"
+    android:theme="@android:style/Theme.NoTitleBar"
+    tools:ignore="UnusedAttribute" />
+
+<!-- IronSource -->
+<activity
+    android:name="com.ironsource.sdk.controller.ControllerActivity"
+    android:configChanges="orientation|screenSize"
+    android:hardwareAccelerated="true" />
+<activity
+    android:name="com.ironsource.sdk.controller.InterstitialActivity"
+    android:configChanges="orientation|screenSize"
+    android:hardwareAccelerated="true"
+    android:theme="@android:style/Theme.Translucent" />
+<activity
+    android:name="com.ironsource.sdk.controller.OpenUrlActivity"
+    android:configChanges="orientation|screenSize"
+    android:hardwareAccelerated="true"
+    android:theme="@android:style/Theme.Translucent" />
+```
+
+
 ## Usage & Implementation
 
 #### Prerequisites
 * Minimum SDK - 16
 * Internet permission
+* Multidex enabled
 
 #### Initilization
 Place the following in one of your Activities. It's recommended that you initilize AppBid as soon as possible, so a Splash Activity will be most suitable for this, but you can initilize the SDK in your main Activity as well.
