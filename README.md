@@ -12,7 +12,7 @@ All this happens in milliseconds.
 <img src="https://appbid.com/img/appbid_chart.png">
 </p>
 
-## Download and integrate SDK
+## Integration
 Download the SDK from our repository
 ```
 git clone https://github.com/Mobbo-com/appbid-android-sdk
