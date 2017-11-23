@@ -33,7 +33,7 @@ Permissions
 ```
 
 
-Add the following lines under application
+Add the following lines under application tag in your Manifest
 ```
 <!-- Chartboost -->
 <activity android:name="com.chartboost.sdk.CBImpressionActivity"
