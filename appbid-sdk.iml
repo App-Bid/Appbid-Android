@@ -131,10 +131,8 @@
     <orderEntry type="library" name="com.google.ads.mediation:facebook-4.26.1.0" level="project" />
     <orderEntry type="library" name="com.android.support:support-media-compat-25.3.1" level="project" />
     <orderEntry type="library" name="com.google.android.gms:play-services-ads-license-11.6.0" level="project" />
-    <orderEntry type="library" name="com.flurry.android:analytics-8.0.2" level="project" />
     <orderEntry type="library" name="io.reactivex.rxjava2:rxandroid-2.0.1" level="project" />
     <orderEntry type="library" name="com.android.support:animated-vector-drawable-25.3.1" level="project" />
-    <orderEntry type="library" name="com.flurry.android:ads-8.0.2" level="project" />
     <orderEntry type="library" name="com.squareup.okhttp3:okhttp:3.9.1@jar" level="project" />
     <orderEntry type="library" name="com.google.android.gms:play-services-ads-lite-license-11.6.0" level="project" />
     <orderEntry type="library" name="com.google.android.gms:play-services-ads-11.6.0" level="project" />
@@ -144,9 +142,11 @@
     <orderEntry type="library" name="com.amazon.android:mobile-ads:5.8.1.1@jar" level="project" />
     <orderEntry type="library" name="com.mopub:mopub-sdk-native-video-4.15.0" level="project" />
     <orderEntry type="library" name="com.google.android.gms:play-services-ads-lite-11.6.0" level="project" />
+    <orderEntry type="library" name="com.flurry.android:ads-7.0.0" level="project" />
     <orderEntry type="library" name="com.squareup.picasso:picasso:2.5.2@jar" level="project" />
     <orderEntry type="library" name="com.mopub.volley:mopub-volley:1.1.0@jar" level="project" />
     <orderEntry type="library" name="com.mopub:mopub-sdk-rewardedvideo-4.15.0" level="project" />
+    <orderEntry type="library" name="com.flurry.android:analytics-7.0.0" level="project" />
     <orderEntry type="library" name="com.android.support:support-vector-drawable-25.3.1" level="project" />
     <orderEntry type="library" name="com.android.support:recyclerview-v7-25.3.1" level="project" />
     <orderEntry type="library" name="__local_aars__:C.\Projects\AppBid\Sample\appbid-sdk\libs\appbid-sdk.jar:unspecified@jar" level="project" />
