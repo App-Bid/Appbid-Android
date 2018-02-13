@@ -15,7 +15,7 @@ All this happens in milliseconds.
 ## Integration
 Download the SDK from our repository
 ```
-git clone https://github.com/Mobbo-com/appbid-android-sdk
+git clone https://github.com/Mobbo-com/Appbid-Android
 ```
 
 Add AppBid library to your project(File->New->Import module):
